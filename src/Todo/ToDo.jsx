@@ -20,7 +20,7 @@ export default function RegistroDeGastos() {
 
 
     /* Estabeleci uma função salvarGastos que será executada quando os dados for enviado, onde o "'e.preventDefault" evita que os dados seja enviado automaticamente*/
-    const salvarGastos = (e) {
+    const salvarGastos = (e) { 
         e.preventDefault();
         setLista([...lista, { Descricao:Descricao, Data:Data, Preco:Preco, Categoria:Categoria, Gastos:Gastos }]);
         setDescricao ("");
